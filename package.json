@@ -2,6 +2,7 @@
   "name": "sample-application",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nadiratif.github.io/simple-application-using-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -9,6 +10,7 @@
     "bootstrap": "^5.2.2",
     "file-saver": "^2.0.5",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
@@ -19,6 +21,8 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
